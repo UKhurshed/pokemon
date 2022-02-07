@@ -9,7 +9,6 @@ class SearchPokemonInitial extends SearchPokemonState {
   const SearchPokemonInitial();
 }
 
-
 class SearchPokemonLoading extends SearchPokemonState {
   const SearchPokemonLoading();
 }
