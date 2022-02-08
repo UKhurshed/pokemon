@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../pokemonFields.dart';
 import 'widgets.dart';
 import '../model/search_pokemon_model.dart';
 
 class PokemonStatistics extends StatelessWidget {
-  final Pokemon pokemon;
+  final PokemonDBModel pokemon;
 
   const PokemonStatistics({Key? key, required this.pokemon}) : super(key: key);
 

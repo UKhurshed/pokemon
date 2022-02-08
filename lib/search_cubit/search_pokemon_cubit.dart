@@ -6,6 +6,8 @@ import 'package:meta/meta.dart';
 import 'package:pokemon/model/search_pokemon_model.dart';
 import 'package:pokemon/repository/search_pokemon_repository.dart';
 
+import '../pokemonFields.dart';
+
 part 'search_pokemon_state.dart';
 
 class SearchPokemonCubit extends Cubit<SearchPokemonState> {

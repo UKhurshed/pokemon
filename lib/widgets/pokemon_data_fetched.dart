@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pokemon/model/search_pokemon_model.dart';
+import '../pokemonFields.dart';
 import 'widgets.dart';
 
 class PokemonDataFetched extends StatelessWidget {
-  final Pokemon pokemon;
+  final PokemonDBModel pokemon;
   final bool isSearchPokemon;
 
   const PokemonDataFetched(
@@ -20,19 +21,19 @@ class PokemonDataFetched extends StatelessWidget {
           height: 20,
         ),
         PokemonName(
-          pokemonName: pokemon.name,
+          pokemonName: pokemon.pokemonName,
         ),
         const SizedBox(
           height: 10,
         ), // pokemon.abilities[0].ability.name,
-        PokemonImage(pokemonImageURL: pokemon.sprites.frontDefault),
+        PokemonImage(pokemonImageURL: pokemon.pokemonImageURL),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             PokemonAbilities(
-              firstAbility: pokemon.abilities[0].ability.name,
-              secondAbility: pokemon.abilities[1].ability.name,
-              typeName: pokemon.types[0].type.name,
+              firstAbility: pokemon.pokemonFirstAbility,
+              secondAbility: pokemon.pokemonSecondAbility,
+              typeName: pokemon.pokemonTypeName,
             ),
             const SizedBox(
               width: 30,

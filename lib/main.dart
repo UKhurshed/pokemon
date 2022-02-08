@@ -5,7 +5,8 @@ import 'package:pokemon/screens/search_pokemon_screen.dart';
 import 'package:pokemon/search_cubit/search_pokemon_cubit.dart';
 import 'core/constants.dart';
 
-void main() {
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const PokemonApp());
 }
 

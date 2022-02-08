@@ -14,7 +14,7 @@ class SearchPokemonLoading extends SearchPokemonState {
 }
 
 class SearchPokemonFetched extends SearchPokemonState {
-  final Pokemon pokemon;
+  final PokemonDBModel pokemon;
 
   const SearchPokemonFetched(this.pokemon);
 }

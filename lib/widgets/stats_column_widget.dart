@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import '../pokemonFields.dart';
 import 'widgets.dart';
-import '../model/search_pokemon_model.dart';
 
 class StatsColumn extends StatelessWidget {
-  final Pokemon pokemon;
+  final PokemonDBModel pokemon;
 
   const StatsColumn({Key? key, required this.pokemon}) : super(key: key);
 
@@ -20,24 +20,20 @@ class StatsColumn extends StatelessWidget {
           height: 10,
         ),
         StatsItem(
-          statName: pokemon.stats[0].stat.name,
-          baseStateName: pokemon.stats[0].baseStat.toString(),
+          statName: pokemon.pokemonFirstStatsName,
+          baseStateName: pokemon.pokemonFirstBaseName,
         ),
         StatsItem(
-          statName: pokemon.stats[1].stat.name,
-          baseStateName: pokemon.stats[1].baseStat.toString(),
+          statName: pokemon.pokemonSecondStatsName,
+          baseStateName: pokemon.pokemonSecondBaseName,
         ),
         StatsItem(
-          statName: pokemon.stats[1].stat.name,
-          baseStateName: pokemon.stats[1].baseStat.toString(),
+          statName: pokemon.pokemonThirdStatsName,
+          baseStateName: pokemon.pokemonThirdBaseName,
         ),
         StatsItem(
-          statName: pokemon.stats[2].stat.name,
-          baseStateName: pokemon.stats[2].baseStat.toString(),
-        ),
-        StatsItem(
-          statName: pokemon.stats[3].stat.name,
-          baseStateName: pokemon.stats[3].baseStat.toString(),
+          statName: pokemon.pokemonFourthStatsName,
+          baseStateName: pokemon.pokemonFourthBaseName,
         ),
       ],
     );
