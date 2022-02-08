@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../pokemonFields.dart';
+import '../database/pokemon_fields.dart';
 import 'widgets.dart';
 
 class StatsColumn extends StatelessWidget {

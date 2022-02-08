@@ -1,6 +1,6 @@
 import 'package:path/path.dart';
 import 'package:pokemon/core/constants.dart';
-import 'package:pokemon/pokemonFields.dart';
+import 'package:pokemon/database/pokemon_fields.dart';
 import 'package:sqflite/sqflite.dart';
 
 class PokemonDatabase {

@@ -1,12 +1,8 @@
 import 'dart:math';
-
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
-import 'package:pokemon/model/search_pokemon_model.dart';
 import 'package:pokemon/repository/search_pokemon_repository.dart';
-
-import '../pokemonFields.dart';
+import '../database/pokemon_fields.dart';
 
 part 'search_pokemon_state.dart';
 

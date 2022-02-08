@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokemon/model/search_pokemon_model.dart';
-import '../pokemonFields.dart';
+import '../database/pokemon_fields.dart';
 import 'widgets.dart';
 
 class PokemonDataFetched extends StatelessWidget {

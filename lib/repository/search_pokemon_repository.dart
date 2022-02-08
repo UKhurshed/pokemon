@@ -1,11 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:pokemon/core/constants.dart';
-import 'package:pokemon/pokemonFields.dart';
-import 'package:pokemon/pokemon_database.dart';
-
+import 'package:pokemon/database/pokemon_database.dart';
+import '../database/pokemon_fields.dart';
 import '../model/search_pokemon_model.dart';
 
 abstract class SearchPokemonByNameRepository {
